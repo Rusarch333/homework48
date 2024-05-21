@@ -19,7 +19,10 @@ console.log(document.querySelectorAll("img"));
 console.log(document.querySelector(".menu li:last-of-type"));
 
 // 4) Дістати заголовок першої статті з секції з класом content-section
-console.log(document.querySelector(".content-section article:first-of-type h2"));
+
+// First-of-type можна не писати у querySelector, він і так перший знаходить!
+// console.log(document.querySelector(".content-section article:first-of-type h2"));
+console.log(document.querySelector(".content-section article h2"));
 
 // 5) Дістати усі другі абзаци в статтях
 console.log(document.querySelectorAll("article p:nth-of-type(2n)"));
